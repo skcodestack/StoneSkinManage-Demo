@@ -24,4 +24,6 @@ public class BaseApplication extends Application {
 
         SkinManager.getInstance().init(this);
     }
+
+
 }

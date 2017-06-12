@@ -15,6 +15,7 @@ import github.com.permissionlib.annotation.PermissionFail;
 import github.com.permissionlib.annotation.PermissionSuccess;
 import github.com.stoneskin.BaseSkinActivity;
 import github.com.stoneskin.skin.SkinManager;
+import github.com.stoneskin.skin.SkinResource;
 
 public class MainActivity extends BaseSkinActivity {
 
@@ -66,5 +67,12 @@ public class MainActivity extends BaseSkinActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         StonePermission.onRequestPermissionsResult(this,requestCode,permissions,grantResults);
+    }
+
+
+    @Override
+    public void chanageSkin(SkinResource resource) {
+        super.chanageSkin(resource);
+
     }
 }
